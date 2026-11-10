@@ -1,0 +1,181 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/settings_screen.gd" id="1_settings"]
+
+[node name="SettingsScreen" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_settings")
+
+[node name="VBox" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="MasterRow" type="HBoxContainer" parent="VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="MasterRowLabel" type="Label" parent="VBox/MasterRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(140, 0)
+text = "Master Volume"
+
+[node name="MasterVolumeSlider" type="HSlider" parent="VBox/MasterRow"]
+unique_name_in_owner = true
+layout_mode = 2
+custom_minimum_size = Vector2(220, 0)
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="MasterVolumeValue" type="Label" parent="VBox/MasterRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "100%"
+
+[node name="MusicRow" type="HBoxContainer" parent="VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="MusicRowLabel" type="Label" parent="VBox/MusicRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(140, 0)
+text = "Music Volume"
+
+[node name="MusicVolumeSlider" type="HSlider" parent="VBox/MusicRow"]
+unique_name_in_owner = true
+layout_mode = 2
+custom_minimum_size = Vector2(220, 0)
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="MusicVolumeValue" type="Label" parent="VBox/MusicRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "100%"
+
+[node name="SfxRow" type="HBoxContainer" parent="VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SfxRowLabel" type="Label" parent="VBox/SfxRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(140, 0)
+text = "SFX Volume"
+
+[node name="SfxVolumeSlider" type="HSlider" parent="VBox/SfxRow"]
+unique_name_in_owner = true
+layout_mode = 2
+custom_minimum_size = Vector2(220, 0)
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="SfxVolumeValue" type="Label" parent="VBox/SfxRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "100%"
+
+[node name="ShakeRow" type="HBoxContainer" parent="VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="ShakeRowLabel" type="Label" parent="VBox/ShakeRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(140, 0)
+text = "Screen Shake"
+
+[node name="ScreenShakeSlider" type="HSlider" parent="VBox/ShakeRow"]
+unique_name_in_owner = true
+layout_mode = 2
+custom_minimum_size = Vector2(220, 0)
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="ScreenShakeValue" type="Label" parent="VBox/ShakeRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "100%"
+
+[node name="FullscreenCheck" type="CheckBox" parent="VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Fullscreen"
+
+[node name="VsyncCheck" type="CheckBox" parent="VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "VSync"
+
+[node name="ReduceFlashingCheck" type="CheckBox" parent="VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Reduce Flashing"
+
+[node name="SubtitlesCheck" type="CheckBox" parent="VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Subtitles"
+
+[node name="WidthRow" type="HBoxContainer" parent="VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="WidthRowLabel" type="Label" parent="VBox/WidthRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(140, 0)
+text = "Window Width"
+
+[node name="WindowWidthSpin" type="SpinBox" parent="VBox/WidthRow"]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = 640.0
+max_value = 7680.0
+step = 1.0
+value = 1280.0
+
+[node name="HeightRow" type="HBoxContainer" parent="VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="HeightRowLabel" type="Label" parent="VBox/HeightRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(140, 0)
+text = "Window Height"
+
+[node name="WindowHeightSpin" type="SpinBox" parent="VBox/HeightRow"]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = 360.0
+max_value = 4320.0
+step = 1.0
+value = 720.0
+
+[node name="ButtonsRow" type="HBoxContainer" parent="VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="BackButton" type="Button" parent="VBox/ButtonsRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Back"
+
+[node name="ResetDefaultsButton" type="Button" parent="VBox/ButtonsRow"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Reset Defaults"
