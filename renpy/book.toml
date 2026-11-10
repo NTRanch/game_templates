@@ -1,0 +1,16 @@
+[book]
+title = "Ren'Py Game Shell"
+authors = ["Nice Thoughts Ranch"]
+src = "book/src"
+language = "en"
+
+[build]
+build-dir = "book-out"
+create-missing = false
+
+[output.html]
+default-theme = "coal"
+preferred-dark-theme = "coal"
+git-repository-url = ""
+additional-css = []
+theme = "../theme-torogao"
