@@ -1,0 +1,9 @@
+# Generated state — never commit.
+.godot/
+book-out/
+target/
+Library/
+Temp/
+Obj/
+*.user
+.DS_Store
