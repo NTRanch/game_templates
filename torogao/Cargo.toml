@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = ["crates/shell-core", "crates/shell-app"]
+
+[workspace.package]
+edition = "2021"
+license = "Apache-2.0"
+rust-version = "1.74"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+ron = "0.8"

@@ -1,0 +1,15 @@
+[package]
+name = "shell-core"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "Engine-agnostic shell core for a Torogao game: settings, versioned saves, and the screen flow state machine."
+
+[lib]
+name = "shell_core"
+path = "src/lib.rs"
+
+[dependencies]
+serde.workspace = true
+ron.workspace = true

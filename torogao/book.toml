@@ -1,0 +1,14 @@
+[book]
+title = "Torogao Game Shell"
+authors = ["Nice Thoughts Ranch"]
+language = "en"
+src = "book/src"
+
+[build]
+build-dir = "book-out"
+create-missing = false
+
+[output.html]
+default-theme = "coal"
+preferred-dark-theme = "coal"
+theme = "../theme-torogao"
